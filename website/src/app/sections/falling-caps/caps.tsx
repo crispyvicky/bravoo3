@@ -115,7 +115,7 @@ export const CapsModel = () => {
               progress: 1,
               ease: "power2.inOut",
               /* We pass current target idx by params */
-              onUpdate: (idx) => {
+              onUpdate: (idx: number) => {
                 handleUpdate(idx);
               },
             },

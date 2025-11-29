@@ -38,7 +38,7 @@ export const DottedDiv = React.forwardRef<
 	});
 
 	return (
-		<div {...rest} className={clsx(s.div, className)} ref={mergeRefs([ref, elementRef])}>
+		<div {...(rest as any)} className={clsx(s.div, className)} ref={mergeRefs([ref, elementRef])}>
 			<div className={s.mask} />
 			{children}
 		</div>

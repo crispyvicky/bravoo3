@@ -32,10 +32,13 @@ declare module "@bsmnt/scrollytelling" {
         to?: any;
         from?: any;
         fromTo?: any[];
+        duration?: number;
+        [key: string]: any; // Allow any additional GSAP properties
     }
 
     export interface ScrollytellingAnimationProps {
         tween?: TweenConfig | TweenConfig[];
+        disabled?: boolean;
         children?: ReactNode;
     }
 
@@ -46,7 +49,34 @@ declare module "@bsmnt/scrollytelling" {
         children?: ReactNode;
     }
 
+    export interface ScrollytellingWaypointProps {
+        at?: number;
+        tween?: TweenConfig | TweenConfig[];
+        children?: ReactNode;
+        onReverseCall?: () => void;
+        onCall?: () => void;
+    }
+
+    export interface ScrollytellingStaggerProps {
+        overlap?: number;
+        tween?: TweenConfig | TweenConfig[];
+        children?: ReactNode;
+    }
+
+    export interface ScrollytellingParallaxProps {
+        tween?: TweenConfig | TweenConfig[];
+        children?: ReactNode;
+    }
+
+    export interface ScrollytellingContext {
+        timeline?: any;
+    }
+
     export const Root: FC<ScrollytellingRootProps>;
     export const Animation: FC<ScrollytellingAnimationProps>;
     export const Pin: FC<ScrollytellingPinProps>;
+    export const Waypoint: FC<ScrollytellingWaypointProps>;
+    export const Stagger: FC<ScrollytellingStaggerProps>;
+    export const Parallax: FC<ScrollytellingParallaxProps>;
+    export function useScrollytelling(): ScrollytellingContext;
 }
