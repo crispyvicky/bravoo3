@@ -4,6 +4,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer");
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
+  output: "standalone",
   images: {
     domains: ["lab.basement.studio"],
   },
