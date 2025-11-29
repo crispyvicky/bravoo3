@@ -21,7 +21,7 @@ export const Footer = () => {
   const isDesktopSm = useMedia("(min-width: 1024px)");
 
   return (
-    <Scrollytelling.Root start="top 80%" debug={{ label: "Footer" }}>
+    <Scrollytelling.Root start="top 80%" debug={false}>
       <footer className={s.footer}>
         <PreFooter />
         <div className={s["imgs-container"]}>
@@ -233,7 +233,7 @@ const Terminal = () => {
 
         <DottedDiv className={s.content}>
           <p ref={contentRef}>
-{`function computeTruth() {
+            {`function computeTruth() {
   const noise = Array.from({ length: 80 }, () =>
     String.fromCharCode(33 + Math.random() * 94)
   ).join("");

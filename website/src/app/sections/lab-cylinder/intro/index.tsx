@@ -9,7 +9,7 @@ export const LabIntro = () => {
       start="top bottom"
       end="bottom top"
       scrub={1.1}
-      debug={{ label: "Lab Intro" }}
+      debug={false}
     >
       <div className={s.container}>
         <Scrollytelling.Parallax
@@ -85,7 +85,7 @@ export const LabIntro = () => {
               fill="#EFEFEF"
             />
           </svg>
-         BRAVOO — we make shit accessible. We digitalize businesses and real life so people don’t get left behind. Simple as that.
+          BRAVOO — we make shit accessible. We digitalize businesses and real life so people don’t get left behind. Simple as that.
         </p>
 
         <div className={s.marquees}>
@@ -139,7 +139,7 @@ const Marquee = ({
       >
         {Array.from({ length: 10 }, (_, i) => (
           <div key={i} className={s.marqueeItem}>
-Beyond The Ordinary <LabSvg />
+            Beyond The Ordinary <LabSvg />
           </div>
         ))}
       </div>

@@ -26,7 +26,7 @@ const splitText = (text: string, wordClass?: string) => {
 };
 
 const lines = [
-  "We build fast,","we build loud,","we build shit that lasts."
+  "We build fast,", "we build loud,", "we build shit that lasts."
 ];
 
 
@@ -48,7 +48,7 @@ export const FallingCaps = () => {
   );
 
   return (
-    <Scrollytelling.Root end="bottom bottom" debug={{ label: "Falling Caps" }}>
+    <Scrollytelling.Root end="bottom bottom" debug={false}>
       <section className={s["spacer"]}>
         <div className={s["pin"]}>
           <div className={s["canvas-container"]}>

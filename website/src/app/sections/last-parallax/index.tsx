@@ -12,7 +12,7 @@ export const LastParallax = () => {
     <Scrollytelling.Root
       start="top bottom"
       scrub={0.75}
-      debug={{ label: "Last Parallax" }}
+      debug={false}
     >
       <section className={s["section"]}>
         <div className="wrapper">

@@ -22,9 +22,8 @@ const itemsPadding = 4;
 
 export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
   const { height } = useViewportSize();
-  const pinSpacerHeight = `calc(3 * ${itemHeight} * ${
-    Math.max(itemsInViewAtOnce, experiments.length) + itemsPadding
-  })`;
+  const pinSpacerHeight = `calc(3 * ${itemHeight} * ${Math.max(itemsInViewAtOnce, experiments.length) + itemsPadding
+    })`;
 
   const update = useMapToCylinder({
     target: "[data-experiment]",
@@ -49,7 +48,7 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
       callbacks={{
         onRefresh: () => update(progress.value),
       }}
-      debug={{ label: "Cylinder" }}
+      debug={false}
     >
       <div
         className={s["section"]}
