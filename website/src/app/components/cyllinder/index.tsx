@@ -81,7 +81,7 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
                       className={s["link"]}
                       href={experiment.href}
                       target="_blank"
-                      rel="noopener"
+                      rel="noreferrer"
                     >
                       {experiment.og && (
                         <Image
@@ -99,7 +99,7 @@ export const Cyllinder: React.FC<CyllinderProps> = ({ experiments }) => {
                     {author?.name && (
                       <p className={s["credits"]}>
                         <span>Made by</span>{" "}
-                        <Link href={author.url} target="_blank" rel="noopener">
+                        <Link href={author.url} target="_blank" rel="noreferrer">
                           {author?.name}
                         </Link>
                       </p>

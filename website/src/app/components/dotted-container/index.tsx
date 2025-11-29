@@ -1,11 +1,23 @@
 import clsx from 'clsx';
 import { gsap } from 'gsap';
 import * as React from 'react';
-import mergeRefs from 'react-merge-refs';
-
 import { useMouseTracker } from '../../hooks/use-mouse-tracker';
 
 import s from './dotted-container.module.scss';
+
+function mergeRefs<T = any>(
+	refs: Array<React.MutableRefObject<T> | React.LegacyRef<T>>
+): React.RefCallback<T> {
+	return (value) => {
+		refs.forEach((ref) => {
+			if (typeof ref === "function") {
+				ref(value);
+			} else if (ref != null) {
+				(ref as React.MutableRefObject<T | null>).current = value;
+			}
+		});
+	};
+}
 
 export const DottedDiv = React.forwardRef<
 	HTMLDivElement,
