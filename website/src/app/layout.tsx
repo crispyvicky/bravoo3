@@ -25,33 +25,30 @@ const basementGrotesque = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "BSMNT @ Scrollytelling",
-  description:
-    "A demo website made exclusively to showcase a couple of cool animations powered by our new library, @bsmnt/scrollytelling.",
+  title: "bravoo.world",
+  description: "bravoo.world connecting",
   viewport: {
     height: "device-height",
     initialScale: 1,
     width: "device-width",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   manifest: "/manifest.webmanifest",
   twitter: {
     card: "summary_large_image",
-    creator: "@basementstudio",
-    description: "BSMNT @ Scrollytelling",
+    title: "bravoo.world",
+    description: "bravoo.world connecting",
     images: [{ width: 1200, height: 630, url: `${siteOrigin}/og.jpg` }],
-    site: "@basementstudio",
-    title: "BSMNT @ Scrollytelling",
   },
   openGraph: {
-    description: "BSMNT @ Scrollytelling",
+    description: "bravoo.world connecting",
     images: [{ width: 1200, height: 630, url: `${siteOrigin}/og.jpg` }],
     locale: "en-US",
-    siteName: "BSMNT @ Scrollytelling",
-    title: "BSMNT @ Scrollytelling",
+    siteName: "bravoo.world",
+    title: "bravoo.world",
     type: "website",
     url: siteOrigin,
   },
