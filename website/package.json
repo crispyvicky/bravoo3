@@ -8,7 +8,7 @@
     "build:analyze": "cross-env ANALYZE=true yarn build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "cd lib/scrollytelling && npm install && npm run build"
+    "postinstall": "cd lib/scrollytelling && npm install && npm run build || echo 'Warning: postinstall script failed, but continuing build'"
   },
   "dependencies": {
     "@bsmnt/scrollytelling": "file:./lib/scrollytelling",
