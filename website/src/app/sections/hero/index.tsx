@@ -371,7 +371,7 @@ export const Hero = () => {
                 <p>
                   We’re a small, sharp, no-bullshit studio built by Vicky — the guy who actually
                   gives a damn. We work at the edge of high-performance and immersive digital
-                  experiences, putting in stupid levels of effort to drag ideas out of your head
+                  experiences, putting in stupid levels of effort to Drag ideas out of your head
                   and turn them into real, beautifully built shit through savage branding,
                   clean visuals, and development that hits harder than it should.
                 </p>
